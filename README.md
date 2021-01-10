@@ -11,7 +11,7 @@ For available cloud services and how to setup rclone check out: https://rclone.o
 <br>
 ### config.ini usage:
 ```
-You can add as many jobs as you want. Section names needs to be JOB_#. Use template.ini for reference.
+You can add as many jobs as you want. Section names needs to be JOB_#. Use default 'config.ini' for reference.
 Each job needs to have these three options: NAME, PATH and REMOTE:
 - NAME          = Name of the job           (ex. Users Backup)
 - PATH          = Path to backup from       (ex. C:\Users)
