@@ -4,13 +4,13 @@ rCloneBackupTool
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-green.svg)](https://www.python.org/)
 [![MIT license](https://img.shields.io/badge/License-MIT-green.svg)](https://lbesson.mit-license.org/)
 ===
-### Backup tool made using rclone
+## Backup tool made using rclone
 For available cloud services and how to setup rclone check out: https://rclone.org/docs/
 <br>
 <br>
 <br>
+### config.ini usage:
 ```
-config.ini usage:
 You can add as many jobs as you want. Section names needs to be JOB_#.
 Each job needs to have these three options: NAME, PATH and REMOTE:
 - NAME          = Name of the job           (ex. Users Backup)
