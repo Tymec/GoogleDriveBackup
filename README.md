@@ -23,4 +23,4 @@ Each section can be manually adjusted to your needs, ie. you can for example add
 - [ARGUMENTS]   = check out https://rclone.org/flags/ for more
 ```
 ---
-You can use https://nssm.cc/ to run the script on boot.
+You can use https://nssm.cc/ to run rCloneBackupTool on boot.
