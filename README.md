@@ -4,8 +4,8 @@ rCloneBackupTool
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-green.svg)](https://www.python.org/)
 [![MIT license](https://img.shields.io/badge/License-MIT-green.svg)](https://lbesson.mit-license.org/)
 ===
-### For available cloud services and how to setup rclone check out: https://rclone.org/docs/
-### [Download](https://github.com/Tymec/rcloneBackupTool/releases/latest)
+#### For available cloud services and how to setup rclone check out: https://rclone.org/docs/
+### Download latest release [here](https://github.com/Tymec/rcloneBackupTool/releases/latest)
 <br/>
 
 ### config.ini usage:
