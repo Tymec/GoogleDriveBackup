@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# rCloneBackupTool
+src/logs
+src/config.ini
