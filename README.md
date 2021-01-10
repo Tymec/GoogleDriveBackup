@@ -7,8 +7,6 @@ rCloneBackupTool
 ### For available cloud services and how to setup rclone check out: https://rclone.org/docs/
 ### [Download](https://github.com/Tymec/rcloneBackupTool/releases/latest)
 <br/>
-<br/>
-<br/>
 
 ### config.ini usage:
 
