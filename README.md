@@ -6,10 +6,12 @@ rCloneBackupTool
 ===
 ### For available cloud services and how to setup rclone check out: https://rclone.org/docs/
 ### [Download](https://github.com/Tymec/rcloneBackupTool/releases/latest)
-<br>
-<br>
-<br>
+<br/>
+<br/>
+<br/>
+
 ### config.ini usage:
+
 ```
 You can add as many jobs as you want. Section names needs to be JOB_#. Use default 'config.ini' for reference.
 Each job needs to have these three options: NAME, PATH and REMOTE:
