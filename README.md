@@ -4,7 +4,7 @@ rCloneBackupTool
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-green.svg)](https://www.python.org/)
 [![MIT license](https://img.shields.io/badge/License-MIT-green.svg)](https://lbesson.mit-license.org/)
 ===
-## Backup tool made using rclone
+## Backup tool that uses rclone
 For available cloud services and how to setup rclone check out: https://rclone.org/docs/
 <br>
 <br>
