@@ -22,5 +22,6 @@ Each section can be manually adjusted to your needs, ie. you can for example add
 - [PARAMETERS]  = rclone flags that do not take any arguments, ie. --verbose (1 = true, 0 = false)
 - [ARGUMENTS]   = check out https://rclone.org/flags/ for more
 ```
+### [Download](https://github.com/Tymec/rcloneBackupTool/releases/latest)
 ---
 You can use https://nssm.cc/ to run the script on boot.
