@@ -4,8 +4,8 @@ rCloneBackupTool
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-green.svg)](https://www.python.org/)
 [![MIT license](https://img.shields.io/badge/License-MIT-green.svg)](https://lbesson.mit-license.org/)
 ===
-## Backup tool that uses rclone
-For available cloud services and how to setup rclone check out: https://rclone.org/docs/
+### For available cloud services and how to setup rclone check out: https://rclone.org/docs/
+### [Download](https://github.com/Tymec/rcloneBackupTool/releases/latest)
 <br>
 <br>
 <br>
@@ -22,6 +22,5 @@ Each section can be manually adjusted to your needs, ie. you can for example add
 - [PARAMETERS]  = rclone flags that do not take any arguments, ie. --verbose (1 = true, 0 = false)
 - [ARGUMENTS]   = check out https://rclone.org/flags/ for more
 ```
-### [Download](https://github.com/Tymec/rcloneBackupTool/releases/latest)
 ---
 You can use https://nssm.cc/ to run the script on boot.
