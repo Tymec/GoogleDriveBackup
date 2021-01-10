@@ -16,6 +16,9 @@ TRAY_ICON   = os.path.join(_cwd, "logo.ico")
 TRAY_TEXT   = "rClone Backup"
 CONFIG_TEMPLATE = "[JOB_1]\nNAME\t\t\t\t\t= Default\nPATH\t\t\t\t\t= C:\\Users\nREMOTE\t\t\t\t\t= GoogleDrive:Users\n\n[OPTIONS]\nMODE\t\t\t\t\t= copy\n\n[PARAMETERS]\nUPDATE\t\t\t\t\t= 1\nVERBOSE\t\t\t\t\t= 1\n\n[ARGUMENTS]\nTRANSFERS\t\t\t\t= 10\nCHECKERS\t\t\t\t= 20\nCONTIMEOUT\t\t\t\t= 60s\nTIMEOUT\t\t\t\t\t= 300s\nRETRIES\t\t\t\t\t= 3\nLOW-LEVEL-RETRIES\t\t= 10\nSTATS\t\t\t\t\t= 1s"
 
+current_program = win32gui.GetForegroundWindow()
+win32gui.ShowWindow(current_program , win32con.SW_HIDE)
+
 class SysTray(threading.Thread):
     QUIT = 'QUIT'
     SPECIAL_ACTIONS = [QUIT]
