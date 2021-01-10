@@ -14,6 +14,7 @@ CONFIG_PATH = os.path.join(_cwd, "config.ini")
 LOG_PATH    = os.path.join(_cwd, "logs")
 TRAY_ICON   = os.path.join(_cwd, "logo.ico")
 TRAY_TEXT   = "rClone Backup"
+CONFIG_TEMPLATE = "[JOB_1]\nNAME\t\t\t\t\t= Default\nPATH\t\t\t\t\t= C:\\Users\nREMOTE\t\t\t\t\t= GoogleDrive:Users\n\n[OPTIONS]\nMODE\t\t\t\t\t= copy\n\n[PARAMETERS]\nUPDATE\t\t\t\t\t= 1\nVERBOSE\t\t\t\t\t= 1\n\n[ARGUMENTS]\nTRANSFERS\t\t\t\t= 10\nCHECKERS\t\t\t\t= 20\nCONTIMEOUT\t\t\t\t= 60s\nTIMEOUT\t\t\t\t\t= 300s\nRETRIES\t\t\t\t\t= 3\nLOW-LEVEL-RETRIES\t\t= 10\nSTATS\t\t\t\t\t= 1s"
 
 class SysTray(threading.Thread):
     QUIT = 'QUIT'
@@ -319,6 +320,12 @@ def create_commands(jobs, arguments, parameters, options):
     return cmds
 
 config = configparser.ConfigParser(interpolation=None)
+
+if not os.path.isfile(CONFIG_PATH):
+    print("Config file not found. Creating a new one.")
+    with open(CONFIG_PATH, "w") as f:
+        f.write(CONFIG_TEMPLATE)
+
 config.read(CONFIG_PATH)
 
 if not os.path.isdir(LOG_PATH):
