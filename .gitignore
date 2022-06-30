@@ -131,3 +131,5 @@ dmypy.json
 # rCloneBackupTool
 src/logs
 src/config.ini
+
+src/config.ini.old
