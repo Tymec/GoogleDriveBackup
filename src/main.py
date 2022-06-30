@@ -292,12 +292,15 @@ def parse_jobs(cfg):
         raise MissingJob("No jobs were found.")
     return jobs
 
-def parse_cfg(section, cfg):
+def parse_cfg(section, cfg, env=None):
     if section not in cfg:
         raise MissingSection(f"Missing '{section}' section.")
 
     parsed = {}
     for key, val in cfg.items(section):
+        if env:
+            for _e, _v in env:
+                val = val.replace(_e, _v)
         parsed[key] = val
     return parsed
 
@@ -335,10 +338,12 @@ if not os.path.isdir(LOG_PATH):
     os.mkdir(LOG_PATH)
 
 try:
+    env = parse_cfg("ENVIROMENT", config)
     jobs = parse_jobs(config)
     arguments = parse_cfg("ARGUMENTS", config)
     parameters = parse_cfg("PARAMETERS", config)
     options = parse_cfg("OPTIONS", config)
+    
     if not options.get('mode'):
         raise MissingOption("mode", "Mode option is required for rclone to function.")
 except Exception as e:

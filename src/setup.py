@@ -15,7 +15,8 @@ build_exe_options = {
         "win32gui_struct",
         "win32gui"
     ],
-    "include_files": ["logo.ico", "config.ini"]
+    "include_files": ["logo.ico", "config.ini"],
+    "build_exe": "..//build"
 }
 
 setup(
